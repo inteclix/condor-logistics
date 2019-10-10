@@ -13,6 +13,9 @@ import Enterprise from "./pages/Enterprise";
 import Contactes from "./pages/Contactes";
 import Accueil from "./pages/Accueil";
 import Marchandises from "./pages/Marchandises";
+import Personel from "./pages/Personel";
+import Location from "./pages/Location";
+import Maintenance from "./pages/Maintenance";
 
 export default class App extends React.Component {
   render() {
@@ -25,6 +28,9 @@ export default class App extends React.Component {
             <Route path={"/nos-services"} component={Services} />
             <Route path={"/nos-contacter"} component={Contactes} />
             <Route path={"/enterprise"} component={Enterprise} />
+            <Route path={"/trasport-de-personel"} component={Personel} />
+            <Route path={"/location-de-tous-les-types-de-voitures-et-engins"} component={Location} />
+            <Route path={"/maintenance-des-materiel-roulant-et-engins"} component={Maintenance} />
             <Route
               path={"/transport-public-marchandises"}
               component={Marchandises}

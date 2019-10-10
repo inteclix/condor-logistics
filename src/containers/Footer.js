@@ -9,7 +9,7 @@ class MyMap extends React.Component {
     return (
       <Map
         center={[36.054911, 4.756988]}
-        zoom={6}
+        zoom={10}
         attributionControl={true}
         zoomControl={true}
         doubleClickZoom={true}
@@ -60,7 +60,7 @@ class Footer extends React.Component {
             <a onClick={() => window.scrollTo(0, 0)}>
               <FaArrowAltCircleUp size={48} />
             </a>
-            <img src="http://bejaialogistique.com/file/img/ico/logo-bl-header.png" />
+            <img src={require("../imgs/logo.png")} />
           </div>
           <div>
             <p>

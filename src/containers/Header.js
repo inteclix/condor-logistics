@@ -44,7 +44,7 @@ class Header extends React.Component {
         </div>
         <div className="menu-header">
           <a className="logo">
-            <img src="http://bejaialogistique.com/file/img/ico/logo-bl-header.png" />
+            <img src={require("../imgs/logo.png")} />
           </a>
           <ul>
             <li>

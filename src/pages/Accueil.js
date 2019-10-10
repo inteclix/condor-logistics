@@ -25,54 +25,40 @@ class Accueil extends React.Component {
         <div className="content">
           <h1>DECOUVRIR</h1>
           <div className="cards">
-            <div
-              onClick={() =>
-                this.props.history.push("/nos-services#camions-semi-remorques")
-              }
-              className="card"
-            >
+            <div className="card">
               <img src="http://bejaialogistique.com/file/img/ban/marchandise-fourgon-livraison-transport-entreprise-cargot.jpg" />
-              <label>Camions Semi-Remorques</label>
+              <label className="title">Transport public de marchandis</label>
+              <label >bla bla bla bla bla bla</label>
+              <Link className="button" to="/transport-public-marchandises">
+                En savoir plus
+              </Link>
             </div>
 
-            <div
-              onClick={() =>
-                this.props.history.push("/nos-services#camions-porteurs")
-              }
-              className="card"
-            >
+            <div className="card">
               <img src="http://bejaialogistique.com/file/img/ban/marchandise-fourgon-livraison-transport-entreprise-cargot.jpg" />
-              <label>Camions Porteurs</label>
+              <label className="title">Trasport de personel</label>
+              <label >bla bla bla bla bla bla</label>
+              <Link className="button" to="/trasport-de-personel">
+                En savoir plus
+              </Link>
             </div>
 
-            <div
-              onClick={() =>
-                this.props.history.push("/nos-services#camions-porte-engins")
-              }
-              className="card"
-            >
+            <div className="card">
               <img src="http://bejaialogistique.com/file/img/ban/marchandise-fourgon-livraison-transport-entreprise-cargot.jpg" />
-              <label>Camions Porte Engins et Porte Conteneurs</label>
+              <label className="title">Location de tous les types de voitures et engins</label>
+              <label >bla bla bla bla bla bla</label>
+              <Link className="button" to="/location-de-tous-les-types-de-voitures-et-engins">
+                En savoir plus
+              </Link>
             </div>
 
-            <div
-              onClick={() =>
-                this.props.history.push("/nos-services#camions-porte-engins")
-              }
-              className="card"
-            >
+            <div className="card">
               <img src="http://bejaialogistique.com/file/img/ban/marchandise-fourgon-livraison-transport-entreprise-cargot.jpg" />
-              <label>Camions Porte Engins et Porte Conteneurs</label>
-            </div>
-
-            <div
-              onClick={() =>
-                this.props.history.push("/nos-services#camions-porte-engins")
-              }
-              className="card"
-            >
-              <img src="http://bejaialogistique.com/file/img/ban/marchandise-fourgon-livraison-transport-entreprise-cargot.jpg" />
-              <label>Camions Porte Engins et Porte Conteneurs</label>
+              <label className="title">La maintenance des materiel roulant et engins</label>
+              <label >bla bla bla bla bla bla</label>
+              <Link className="button" to="/maintenance-des-materiel-roulant-et-engins">
+                En savoir plus
+              </Link>
             </div>
           </div>
         </div>

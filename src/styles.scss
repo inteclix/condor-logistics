@@ -1,0 +1,234 @@
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+.app{
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  background-color: #ddd;
+  flex-direction: column;
+}
+.cards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-self: center;
+  .card{
+
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 210px;
+    height: 250px;
+    margin: 10px;
+    border-radius: 5px;
+    padding-bottom: 20px;
+    background-color: #f5f5f5;
+    img{
+      width: 210px;
+    }
+    label{
+      text-align: center;
+    }
+  }
+  .card:hover{
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.4);
+  }
+}
+.pages{
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+  flex: 1;
+}
+header{
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  top: 0px;
+  background-color: #25247b;
+  color: white;
+  box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.4);
+  .contact-header{
+    height: 24px;
+    background-color: #333333;
+    display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        a{
+          margin: 15px;
+        }
+        .icon{
+          margin: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+        }
+        .icon:hover{
+          color: gray;
+        }
+  }
+  .menu-header{
+      justify-content: space-around;
+      display: flex;
+    height: 96px;
+.logo{
+    width: 230px;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+  }
+    ul{
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      li{
+        margin-left: 10px;
+        a{
+          border-bottom: 3px solid white;
+              width: 120px;
+    text-align: center;
+          text-decoration: none;
+          color: white;
+          cursor: pointer;
+          display: block;
+          padding: 10px 10px;
+              font-size: 18px;
+                        background-color: white;
+                        color: black;
+          border-top-left-radius: 7px;
+          border-bottom-right-radius: 7px;
+        }
+        a:hover{
+
+          color: white;
+          background-color: transparent;
+        }
+        a.active{
+
+          color: white;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+  
+}
+
+footer{
+  background-color: #333;
+  color: white;
+  display:flex;
+  flex-direction: column;
+  text-decoration: none;
+  box-shadow: 0px -7px 15px 0px rgba(0,0,0,0.4);
+  .top{
+    display:flex;
+    padding: 10px;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    h1{
+      border-bottom: 1px solid white;
+    }
+    .trouver{
+      height: 400px;
+      flex: 3;
+      border-left: 2px solid white;
+      padding: 10px;
+    }
+    .mission{
+      flex: 2;
+      padding: 10px;
+      p{
+        line-height: 21px;
+        color: #ddd;
+      }
+
+    }
+  }
+  .bottom{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color:  #25247b;
+    div.logo{
+      display: flex;
+      align-items: center;
+      width: 300px;
+      img{
+        height: 48px;
+        margin-left: 20px
+      }
+    }
+    a{
+      text-decoration: none;
+      color: white;
+
+    }
+    a:hover{
+      text-decoration: underline;
+      color: lightgray;
+      cursor: pointer;
+    }
+  }
+}
+
+.leaflet-container {
+  height: 320px;
+  width: 100%;
+}
+
+
+.page{
+  display:flex;
+  flex-direction: column;
+  background-color: #e9ebee;
+  flex: 1;
+  width: 100%;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  .content{
+    display:flex;
+    flex-direction: column;
+    width: 90%;
+    align-self: center;
+    background-color: white;
+    border-radius: 5px;
+  padding: 10px;
+    .pane{
+      display:flex;
+      flex-direction: row;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+}
+@keyframes scaleIn {
+  from {
+    transform: translateY(-50%) scale(0);
+  }
+  to {
+    transform: translateY(-50%) scale(1);
+  }
+}
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

@@ -26,6 +26,9 @@ const Input = ({ label, placeholder, type }) => {
   }
 };
 export default class Contactes extends React.Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
       <div className="page">

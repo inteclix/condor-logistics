@@ -40,7 +40,7 @@ class Header extends React.Component {
           <a target="_blank" href="https://twitter.com" className="icon">
             <FaTwitterSquare size={20} />
           </a>
-          <a>Téléphone: +213 (0) 540 05 50 10</a>
+          <a>Téléphone: +213 (0) 000 00 00 00</a>
         </div>
         <div className="menu-header">
           <a className="logo">

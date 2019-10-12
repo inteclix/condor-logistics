@@ -58,7 +58,7 @@ class Footer extends React.Component {
         <div className="bottom">
           <div className="logo">
             <a onClick={() => window.scrollTo(0, 0)}>
-              <FaArrowAltCircleUp size={48} />
+              <FaArrowAltCircleUp size={40} />
             </a>
             <img src={require("../imgs/logo.png")} />
           </div>

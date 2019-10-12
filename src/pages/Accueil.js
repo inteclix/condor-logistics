@@ -18,6 +18,9 @@ const images = [
 ];
 
 class Accueil extends React.Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
       <div className="page">
@@ -28,7 +31,7 @@ class Accueil extends React.Component {
             <div className="card">
               <img src="http://bejaialogistique.com/file/img/ban/marchandise-fourgon-livraison-transport-entreprise-cargot.jpg" />
               <label className="title">Transport public de marchandis</label>
-              <label >bla bla bla bla bla bla</label>
+              <label>bla bla bla bla bla bla</label>
               <Link className="button" to="/transport-public-marchandises">
                 En savoir plus
               </Link>
@@ -37,7 +40,7 @@ class Accueil extends React.Component {
             <div className="card">
               <img src="http://bejaialogistique.com/file/img/ban/marchandise-fourgon-livraison-transport-entreprise-cargot.jpg" />
               <label className="title">Trasport de personel</label>
-              <label >bla bla bla bla bla bla</label>
+              <label>bla bla bla bla bla bla</label>
               <Link className="button" to="/trasport-de-personel">
                 En savoir plus
               </Link>
@@ -45,18 +48,28 @@ class Accueil extends React.Component {
 
             <div className="card">
               <img src="http://bejaialogistique.com/file/img/ban/marchandise-fourgon-livraison-transport-entreprise-cargot.jpg" />
-              <label className="title">Location de tous les types de voitures et engins</label>
-              <label >bla bla bla bla bla bla</label>
-              <Link className="button" to="/location-de-tous-les-types-de-voitures-et-engins">
+              <label className="title">
+                Location de tous les types de voitures et engins
+              </label>
+              <label>bla bla bla bla bla bla</label>
+              <Link
+                className="button"
+                to="/location-de-tous-les-types-de-voitures-et-engins"
+              >
                 En savoir plus
               </Link>
             </div>
 
             <div className="card">
               <img src="http://bejaialogistique.com/file/img/ban/marchandise-fourgon-livraison-transport-entreprise-cargot.jpg" />
-              <label className="title">La maintenance des materiel roulant et engins</label>
-              <label >bla bla bla bla bla bla</label>
-              <Link className="button" to="/maintenance-des-materiel-roulant-et-engins">
+              <label className="title">
+                La maintenance des materiel roulant et engins
+              </label>
+              <label>bla bla bla bla bla bla</label>
+              <Link
+                className="button"
+                to="/maintenance-des-materiel-roulant-et-engins"
+              >
                 En savoir plus
               </Link>
             </div>

@@ -20,7 +20,7 @@ import Maintenance from "./pages/Maintenance";
 export default class App extends React.Component {
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter onUpdate={() => window.scrollTo(0, 0)}>
         <div className="app">
           <Header />
           <div className="pages">
@@ -29,8 +29,14 @@ export default class App extends React.Component {
             <Route path={"/nos-contacter"} component={Contactes} />
             <Route path={"/enterprise"} component={Enterprise} />
             <Route path={"/trasport-de-personel"} component={Personel} />
-            <Route path={"/location-de-tous-les-types-de-voitures-et-engins"} component={Location} />
-            <Route path={"/maintenance-des-materiel-roulant-et-engins"} component={Maintenance} />
+            <Route
+              path={"/location-de-tous-les-types-de-voitures-et-engins"}
+              component={Location}
+            />
+            <Route
+              path={"/maintenance-des-materiel-roulant-et-engins"}
+              component={Maintenance}
+            />
             <Route
               path={"/transport-public-marchandises"}
               component={Marchandises}

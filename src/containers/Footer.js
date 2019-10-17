@@ -65,7 +65,7 @@ class Footer extends React.Component {
           <div>
             <p>
               © 2019 Condor logistics Powred by{" "}
-              <a target="_blank" href="https://inteclix.github.io">
+              <a target="_blank" href="https://inteclix.netlify.com/">
                 inTecLix
               </a>
             </p>
